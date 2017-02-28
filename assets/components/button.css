@@ -1,0 +1,21 @@
+.tags {
+  background: #FFFFF;
+  background-image: -webkit-linear-gradient(top, FFFFF, #2980b9);
+  background-image: -moz-linear-gradient(top, FFFFF, #2980b9);
+  background-image: -ms-linear-gradient(top, FFFFF, #2980b9);
+  background-image: -o-linear-gradient(top, FFFFF, #2980b9);
+  background-image: linear-gradient(to bottom, FFFFF, #2980b9);
+  -webkit-border-radius: 11;
+  -moz-border-radius: 11;
+  border-radius: 11px;
+  font-family: Arial;
+  color: #00a894;
+  font-size: 10px;
+  padding: 7px 20px 7px 20px;
+  border: solid #00a894 1px;
+  text-decoration: none;
+}
+
+.product-inline {
+display: inline-block;
+}
