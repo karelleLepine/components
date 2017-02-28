@@ -1,0 +1,16 @@
+
+
+/* line 9, /Users/seb/code/lewagon/ui-components/source/stylesheets/components/_avatar.scss */
+.avatar-bordered {
+  width: 100px;
+  border-radius: 50%;
+  -webkit-box-shadow: -1px 2px 24px 8px rgba(0,0,0,0.2);
+-moz-box-shadow: -1px 2px 24px 8px rgba(0,0,0,0.2);
+box-shadow: -1px 2px 24px 8px rgba(0,0,0,0.2);
+  border: lightgray 1px solid;
+margin-top: 20px;
+
+}
+
+
+

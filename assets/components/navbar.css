@@ -48,22 +48,7 @@
   text-decoration: none;
 }
 
-/* Navbar right button */
-.navbar-wagon-button {
-  margin-left: 10px;
-  padding: 0 20px;
-  border-radius: 20em;
-  line-height: 40px;
-  background-color: #00a894;
-  color: white;
-  font-size: 14px;
-  border: 2px solid #D23333;
-}
-.navbar-wagon-button:hover {
-  color: white;
-  background: #00a894;
-  border-color: #ac2626;
-}
+
 
 /* Navbar search form */
 .navbar-wagon-search {

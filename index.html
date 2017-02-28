@@ -11,6 +11,7 @@
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" type="text/css" href="assets/components/style.css" />
     <link rel="stylesheet" type="text/css" href="assets/components/navbar.css" />
+     <link rel="stylesheet" type="text/css" href="assets/components/avatar.css" />
     <link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800' rel='stylesheet' type='text/css'>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -44,7 +45,7 @@
   <div class="navbar-wagon-right hidden-xs hidden-sm">
 
     <!-- Search form -->
-    <form action="" class="navbar-wagon-search">
+    <form action="" class="navbar-wagon-search col-sm-6">
       <input type="text" class="navbar-wagon-search-input" placeholder="Search something">
       <button type="submit" class="navbar-wagon-search-btn">
         <i class="fa fa-search"></i>
@@ -52,7 +53,7 @@
     </form>
 
     <!-- Text link -->
-    <select class="form-control .input-lg">
+    <select class="form-control navbar-wagon-search col-sm-3">
   <option>Genre</option>
   <option>Mood</option>
   <option>Friend</option>
@@ -82,7 +83,7 @@
     </div>
 
     <!-- Button (call-to-action) -->
-    <a href="navbar.html" target="_blank"class="navbar-wagon-item navbar-wagon-button btn">Post stuff</a>
+
   </div>
 
   <!-- Dropdown appearing on mobile only -->
@@ -102,8 +103,9 @@
 <!-- end of nav bar component  -->
 
 <div class="container">
+<div class="row">
 
-<pre class="highlight html"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-wagon"</span><span class="nt">&gt;</span>
+<pre class="highlight html" style="margin-top:40px;"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-wagon"</span><span class="nt">&gt;</span>
   <span class="c">&lt;!-- Logo --&gt;</span>
   <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/"</span> <span class="na">class=</span><span class="s">"navbar-wagon-brand"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"assets/images/LOGOBIGOLLI.png"</span> <span class="nt">/&gt;</span>
@@ -113,12 +115,21 @@
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-wagon-right hidden-xs hidden-sm"</span><span class="nt">&gt;</span>
 
     <span class="c">&lt;!-- Search form --&gt;</span>
-    <span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"navbar-wagon-search"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"navbar-wagon-search col-sm-6"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"navbar-wagon-search-input"</span> <span class="na">placeholder=</span><span class="s">"Search something"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"navbar-wagon-search-btn"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-search"</span><span class="nt">&gt;&lt;/i&gt;</span>
       <span class="nt">&lt;/button&gt;</span>
     <span class="nt">&lt;/form&gt;</span>
+
+
+
+ <span class="c">&lt;!-- Pick something --&gt;</span>
+    <span class="nt">&lt;Select</span> <span class="na">form=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"form-control navbar-wagon-search col-sm-3"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;option&gt;</span><span class="s">"Genre"</span> <span class="nt">&lt;/option&gt;</span>
+      <span class="nt">&lt;option&gt;</span><span class="s">"Mood"</span> <span class="nt">&lt;/option&gt;</span>
+      <span class="nt">&lt;option&gt;</span><span class="s">"Friend"</span> <span class="nt">&lt;/option&gt;</span>
+      <span class="nt">&lt;/select&gt;</span>
 
 
     <span class="c">&lt;!-- Notification link--&gt;</span>
@@ -141,9 +152,6 @@
       <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 
-    <span class="c">&lt;!-- Button (call-to-action) --&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"navbar-wagon-item navbar-wagon-button btn"</span><span class="nt">&gt;</span>Post stuff<span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
 
   <span class="c">&lt;!-- Dropdown appearing on mobile only --&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-wagon-item hidden-md hidden-lg"</span><span class="nt">&gt;</span>
@@ -160,14 +168,46 @@
 </code></pre>
 
 <div class="download">
-          <a class="btn btn-primary btn-lg pull-right" href="navbar.html" target="_blank">View CSS code</a>
+          <a class="btn btn-primary btn-lg pull-right" href="https://github.com/karelleLepine/components/blob/master/assets/components/navbar.css" target="_blank">View CSS code</a>
         </div>
 </div>
+</div>
+
+<!-- AVATAR SECTION -->
+<div class="row">
+
+
+<div class="container">
+<div class="row">
+
+
+      <section class="readme-section" id="avatar">
+      <div class="text-center" style="font-size: 20px;margin-top: 40px;margin-bottom: 40px;">
+        <h2 class="readme-header">2. Avatar</h2>
+        </div>
+        <p>A very simple component. Feel free to code your own variants. Here are ours:</p>
+
+<img src='assets/images/avatar.png'' class="avatar-bordered"/>
+
+
+<pre class="highlight html" style="margin-top:40px;">
+<code>
 
 
 
+<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"user.jpg"</span> <span class="na">alt=</span><span class="s">"user"</span> <span class="na">class=</span><span class="s">"avatar-bordered"</span><span class="nt">&gt;</span>
 
 
+
+</code></pre>
+
+<div class="download">
+          <a class="btn btn-primary btn-lg pull-right" href="https://github.com/karelleLepine/components/blob/master/assets/components/navbar.css" target="_blank">View CSS code</a>
+        </div>
+
+</div>
+</div>
+</div>
 
 
 
